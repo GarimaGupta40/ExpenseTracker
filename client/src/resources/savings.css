@@ -1,0 +1,291 @@
+/* Main Container */
+.expense-tracker-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Navigation Bar */
+  .savings-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background:  #4facfe;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .savings-navbar .nav-left h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .savings-navbar .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .savings-navbar .back-btn {
+    background-color: white;
+    color: #4facfe;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    font-size: 0.9rem;
+  }
+  
+  .savings-navbar .back-btn:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  /* Content Section */
+  .content-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Goal Form */
+  .goal-form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .goal-form h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .goal-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .goal-form input:focus {
+    outline: none;
+    border-color: #4facfe;
+    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .form-actions button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .form-actions button[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .form-actions button[type="submit"]:hover {
+    background-color: #27ae60;
+  }
+  
+  .form-actions button[type="button"] {
+    background-color: #95a5a6;
+    color: white;
+  }
+  
+  .form-actions button[type="button"]:hover {
+    background-color: #7f8c8d;
+  }
+  
+  /* Goals Table */
+  .goals-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .goals-table h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .goals-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  .goals-table th, 
+  .goals-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .goals-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .goals-table tr.completed {
+    background-color: #f8fff9;
+  }
+  
+  .goals-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .progress-bar {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #4facfe;
+    transition: width 0.5s ease;
+  }
+  
+  .progress-text {
+    font-weight: 600;
+    color: #2c3e50;
+    min-width: 40px;
+    text-align: right;
+  }
+  
+  /* Actions Buttons */
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .actions button:nth-child(1) {
+    background-color: #4facfe;
+    color: white;
+  }
+  
+  .actions button:nth-child(2) {
+    background-color: #ebca24;
+    color: white;
+  }
+  
+  .actions button:nth-child(3) {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .actions button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  /* Alerts */
+  .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  .alert-success {
+    background-color: #d5f5e3;
+    color: #27ae60;
+    border-left: 4px solid #2ecc71;
+  }
+  
+  .alert-info {
+    background-color: #e3f2fd;
+    color: #2980b9;
+    border-left: 4px solid #3498db;
+  }
+  
+  .alert-warning {
+    background-color: #fff3e0;
+    color: #e67e22;
+    border-left: 4px solid #f39c12;
+  }
+  
+  /* Empty State */
+  .goals-table > p {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .savings-navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+    
+    .savings-navbar .nav-right {
+      margin-top: 15px;
+      width: 100%;
+    }
+    
+    .savings-navbar .back-btn {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .form-actions {
+      flex-direction: column;
+    }
+    
+    .actions {
+      flex-direction: column;
+      gap: 5px;
+    }
+    
+    .actions button {
+      width: 100%;
+    }
+  }
